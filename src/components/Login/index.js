@@ -1,10 +1,13 @@
 import './index.css'
 
-const Login = () => {
+const Login = props => {
+  const {login} = props
+
   return (
-    <button className="btn" onClick={this.login}>
+    <button type="button" className="login-button" onClick={login}>
       Login
     </button>
   )
 }
+
 export default Login
